@@ -1,0 +1,54 @@
+PHOTOS DU SITE — À REMPLACER
+=============================
+
+Les 18 images .jpg de ce dossier sont PROVISOIRES.
+Elles portent le nom du fichier écrit dessus, pour qu'on ne les prenne
+pas pour de vraies photos. Il faut toutes les remplacer avant de publier.
+
+COMMENT FAIRE
+-------------
+1. Renommez votre photo exactement comme celle qu'elle remplace
+   (le nom doit être identique, .jpg compris).
+2. Glissez-la dans ce dossier et acceptez de remplacer l'ancienne.
+3. Il n'y a rien d'autre à modifier dans le site.
+
+LA LISTE
+--------
+veranda-day.jpg            La véranda de jour  (PAYSAGE, la plus importante :
+                           c'est la grande photo d'accueil)
+sriyani-portrait.jpg       Portrait de Sriyani (le seul PORTRAIT du site)
+sriyani-chef.jpg           Sriyani en train de cuisiner (photo utilisée quand
+                           on partage le lien sur Facebook / WhatsApp)
+
+dinner-clay-pots.jpg       Le dîner servi dans les pots d'argile
+dinner-egg-curry.jpg       Le curry d'œufs
+dinner-guests.jpg          Des hôtes à table
+
+cooking-prep.jpg           Préparation des currys
+cooking-guests.jpg         Des hôtes qui cuisinent avec Sriyani
+cooking-serving.jpg        Le service de ce qui a été cuisiné
+
+market-tour-1.jpg          Au marché
+market-tour-2.jpg          Le choix des légumes
+
+craft-workshop.jpg         L'atelier d'artisanat du soir
+
+sriyani-breakfast.jpg      Sriyani qui sert le petit-déjeuner
+breakfast-spread-1.jpg     La table du petit-déjeuner
+breakfast-spread-2.jpg     Hoppers et fruits frais
+
+guest-sriyani-garden.jpg   Sriyani et des hôtes dans le jardin
+guests-family-kitchen.jpg  Des hôtes dans la cuisine
+entrance-gate.jpg          Le portail blanc et le panneau vert (IMPORTANT :
+                           c'est le repère montré aux chauffeurs de tuk-tuk)
+
+TAILLE DES PHOTOS
+-----------------
+- Toutes en PAYSAGE, sauf sriyani-portrait.jpg qui doit être en PORTRAIT.
+- Largeur idéale : 1600 pixels. Inutile d'aller au-delà.
+- Moins de 400 Ko par photo. Les photos sorties d'un téléphone font souvent
+  5 Mo : réduisez-les d'abord sur squoosh.app (qualité ~75 %), sinon le site
+  sera lent pour les visiteurs en 3G.
+- Extension .jpg en minuscules.
+
+Explications complètes : voir le fichier README.md à la racine du site.

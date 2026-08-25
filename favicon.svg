@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Abha Sewana Villa">
+  <rect width="64" height="64" rx="14" fill="#faf5ec"/>
+  <path d="M17 26h30v14c0 8.3-6.7 15-15 15s-15-6.7-15-15V26z" fill="#b75c38"/>
+  <path d="M17 26h30v6c0 2-6.7 3.6-15 3.6S17 34 17 32v-6z" fill="#8e3b2a"/>
+  <rect x="12" y="21" width="40" height="5.5" rx="2.75" fill="#c9922f"/>
+  <path d="M32 20c0-4.5 3.5-8 8.5-9-.5 5.5-4 9-8.5 9z" fill="#2d4739"/>
+  <path d="M32 20c0-3.5-2.8-6.4-6.8-7.2.4 4.4 3.2 7.2 6.8 7.2z" fill="#3d5c49"/>
+</svg>
