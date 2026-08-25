@@ -13,16 +13,16 @@
   var SITE = {
     name: 'Abha Sewana Villa',
     nameSinhala: 'අඹ සෙවණ',
-    booking: 'https://www.booking.com/Share-aISSaEQ',
+    booking: 'https://www.booking.com/Share-Vk42eL',
     email: 'wgsdgamage@gmail.com',
     phones: [
       { label: '+94 71 288 0371', tel: '+94712880371' },
       { label: '+94 77 140 5266', tel: '+94771405266' }
     ],
     address: 'No. 3323, Stage 3, Anuradhapura, Sri Lanka',
-    // Leave empty ('') to keep showing "coming soon". Paste the full link to switch it on.
-    instagram: '',
-    tiktok: ''
+    // Leave empty ('') to grey the buttons out again.
+    instagram: 'https://www.instagram.com/abhasewanavilla',
+    tiktok: 'https://www.tiktok.com/@abha.sewana.villa'
   };
 
   /* ------------------------------------------------------------------

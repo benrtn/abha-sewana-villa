@@ -1,54 +1,77 @@
-PHOTOS DU SITE — À REMPLACER
-=============================
+PHOTOS DU SITE
+==============
 
-Les 18 images .jpg de ce dossier sont PROVISOIRES.
-Elles portent le nom du fichier écrit dessus, pour qu'on ne les prenne
-pas pour de vraies photos. Il faut toutes les remplacer avant de publier.
+Ce sont les vraies photos de la maison. Elles ont déjà été préparées pour le
+site : recadrées, redimensionnées (1500 px maximum) et allégées (moins de
+250 Ko chacune) pour se charger correctement en 3G.
 
-COMMENT FAIRE
--------------
-1. Renommez votre photo exactement comme celle qu'elle remplace
-   (le nom doit être identique, .jpg compris).
-2. Glissez-la dans ce dossier et acceptez de remplacer l'ancienne.
-3. Il n'y a rien d'autre à modifier dans le site.
+CE QUI A ÉTÉ MODIFIÉ
+--------------------
+veranda-day.jpg          bord gauche recadré : la dame âgée assise sous la
+                         véranda a été retirée du cadre, faute d'accord.
+cooking-serving.jpg      bas rogné : filigrane « HONOR X9d »
+dinner-clay-pots.jpg     bas rogné : filigrane « HONOR X9d »
+dinner-guests.jpg        bas rogné : filigrane « HONOR X9d »
+craft-workshop.jpg       bas rogné : filigrane « Galaxy A15 »
+
+sriyani-chef-og.jpg      recadrage large de sriyani-chef.jpg. Ne s'affiche
+                         jamais sur le site : c'est l'image utilisée quand on
+                         partage un lien sur Facebook ou WhatsApp, qui exige un
+                         format en largeur. Si sriyani-chef.jpg change, refaire
+                         ce recadrage en 1200 x 628 pixels.
+
+IL MANQUE ENCORE
+----------------
+Les 3 chambres et une salle de bain. La section « Our rooms » fonctionne sans
+photo en attendant.
 
 LA LISTE
 --------
-veranda-day.jpg            La véranda de jour  (PAYSAGE, la plus importante :
-                           c'est la grande photo d'accueil)
-sriyani-portrait.jpg       Portrait de Sriyani (le seul PORTRAIT du site)
-sriyani-chef.jpg           Sriyani en train de cuisiner (photo utilisée quand
-                           on partage le lien sur Facebook / WhatsApp)
+veranda-day.jpg            hauteur   Grande photo d'accueil + section repas
+sriyani-portrait.jpg       largeur   Portrait de Sriyani (accueil)
+sriyani-chef.jpg           hauteur   Galerie
+sriyani-chef-og.jpg        large     Partage de lien (invisible sur le site)
 
-dinner-clay-pots.jpg       Le dîner servi dans les pots d'argile
-dinner-egg-curry.jpg       Le curry d'œufs
-dinner-guests.jpg          Des hôtes à table
+dinner-clay-pots.jpg       hauteur   Section repas + Expériences
+dinner-egg-curry.jpg       hauteur   Expériences (dîner) + galerie
+dinner-guests.jpg          hauteur   Expériences (dîner) + galerie
 
-cooking-prep.jpg           Préparation des currys
-cooking-guests.jpg         Des hôtes qui cuisinent avec Sriyani
-cooking-serving.jpg        Le service de ce qui a été cuisiné
+cooking-prep.jpg           hauteur   Carte Cooking + Expériences
+cooking-guests.jpg         largeur   Expériences (cuisine) + galerie
+cooking-serving.jpg        largeur   Haut de page Expériences + galerie
 
-market-tour-1.jpg          Au marché
-market-tour-2.jpg          Le choix des légumes
+market-tour-1.jpg          largeur   Carte Market + Expériences
+market-tour-2.jpg          largeur   Expériences (marché) + galerie
+craft-workshop.jpg         largeur   Carte Craft + Expériences
 
-craft-workshop.jpg         L'atelier d'artisanat du soir
+sriyani-breakfast.jpg      hauteur   Expériences (petit-déjeuner) + galerie
+breakfast-spread-1.jpg     hauteur   Expériences (petit-déjeuner) + galerie
+breakfast-spread-2.jpg     hauteur   Expériences (petit-déjeuner) + galerie
 
-sriyani-breakfast.jpg      Sriyani qui sert le petit-déjeuner
-breakfast-spread-1.jpg     La table du petit-déjeuner
-breakfast-spread-2.jpg     Hoppers et fruits frais
+guest-sriyani-garden.jpg   hauteur   Bandeau de fin Expériences + galerie
+sriyani-kitchen.jpg        hauteur   Bandeau de fin Expériences + galerie
+entrance-porch.jpg         hauteur   Galerie
+entrance-gate.jpg          hauteur   Contact — le portail et le panneau vert
 
-guest-sriyani-garden.jpg   Sriyani et des hôtes dans le jardin
-guests-family-kitchen.jpg  Des hôtes dans la cuisine
-entrance-gate.jpg          Le portail blanc et le panneau vert (IMPORTANT :
-                           c'est le repère montré aux chauffeurs de tuk-tuk)
+tour-wilpattu.jpg          largeur   Expériences — carte « Wilpattu safari »
+                                     ATTENTION : image de 480 px seulement,
+                                     elle est légèrement agrandie à l'écran.
+                                     Une version plus grande serait mieux.
 
-TAILLE DES PHOTOS
------------------
-- Toutes en PAYSAGE, sauf sriyani-portrait.jpg qui doit être en PORTRAIT.
-- Largeur idéale : 1600 pixels. Inutile d'aller au-delà.
-- Moins de 400 Ko par photo. Les photos sorties d'un téléphone font souvent
-  5 Mo : réduisez-les d'abord sur squoosh.app (qualité ~75 %), sinon le site
-  sera lent pour les visiteurs en 3G.
-- Extension .jpg en minuscules.
+REMPLACER UNE PHOTO
+-------------------
+1. Renommez la nouvelle photo exactement comme celle qu'elle remplace.
+2. Glissez-la ici et acceptez de remplacer l'ancienne.
+3. Si ses proportions changent (hauteur au lieu de largeur, par exemple),
+   cherchez son nom de fichier dans les pages HTML et corrigez les nombres
+   width="..." et height="...".
 
-Explications complètes : voir le fichier README.md à la racine du site.
+SI VOUS AJOUTEZ DES PHOTOS
+--------------------------
+- 1500 px de côté maximum, moins de 250 Ko : réduisez-les sur squoosh.app.
+- Vérifiez qu'aucun filigrane de téléphone n'apparaît dans un coin.
+- Attention aux personnes reconnaissables qui ne sont pas des hôtes
+  consentants : mieux vaut recadrer.
+- La galerie de l'accueil est une mosaïque : elle accepte tous les formats.
+
+Explications complètes : voir README.md à la racine du site.

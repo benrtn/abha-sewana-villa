@@ -21,14 +21,14 @@
   <meta property="og:title" content="Contact & Directions — Abha Sewana Villa, Anuradhapura" data-i18n="meta.contact.ogTitle" data-i18n-attr="content">
   <meta property="og:description" content="Phone, email and directions to Abha Sewana Villa in Anuradhapura. Look for the white gate and the green sign. Train, bus and Sigiriya airport routes explained." data-i18n="meta.contact.description" data-i18n-attr="content">
   <meta property="og:url" content="https://abhasewanavilla.netlify.app/contact.html">
-  <meta property="og:image" content="https://abhasewanavilla.netlify.app/images/sriyani-chef.jpg">
+  <meta property="og:image" content="https://abhasewanavilla.netlify.app/images/sriyani-chef-og.jpg">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:height" content="628">
   <meta property="og:image:alt" content="Sriyani cooking at Abha Sewana Villa">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact & Directions — Abha Sewana Villa, Anuradhapura" data-i18n="meta.contact.ogTitle" data-i18n-attr="content">
   <meta name="twitter:description" content="Phone, email and directions to Abha Sewana Villa in Anuradhapura. Look for the white gate and the green sign. Train, bus and Sigiriya airport routes explained." data-i18n="meta.contact.description" data-i18n-attr="content">
-  <meta name="twitter:image" content="https://abhasewanavilla.netlify.app/images/sriyani-chef.jpg">
+  <meta name="twitter:image" content="https://abhasewanavilla.netlify.app/images/sriyani-chef-og.jpg">
 
   <!-- one page per language -->
   <link rel="alternate" hreflang="en" href="https://abhasewanavilla.netlify.app/contact.html?lang=en">
@@ -189,6 +189,17 @@
     .card-hover:hover{box-shadow:0 18px 40px -22px rgba(42,33,27,.4);transform:translateY(-3px);
       border-color:rgba(183,92,56,.3)}
 
+    /* ---------- masonry gallery: photos keep their own shape ---------- */
+    .masonry{column-count:2;column-gap:.75rem}
+    @media (min-width:640px){.masonry{column-count:3;column-gap:1rem}}
+    @media (min-width:1024px){.masonry{column-count:4}}
+    .masonry>*{break-inside:avoid;-webkit-column-break-inside:avoid;margin:0 0 .75rem}
+    @media (min-width:640px){.masonry>*{margin-bottom:1rem}}
+    .tile{display:block;position:relative;overflow:hidden;border-radius:.75rem;background:var(--sand)}
+    .tile>img{width:100%;height:auto;display:block;transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+    .tile:hover>img{transform:scale(1.04)}
+    @media (prefers-reduced-motion:reduce){.tile>img{transition:none}}
+
     /* ---------- images ---------- */
     .ph{position:relative;overflow:hidden;background:var(--sand)}
     .ph>img{width:100%;height:100%;object-fit:cover}
@@ -240,11 +251,11 @@
   "slogan": "Your Peaceful Retreat in the Heart of History",
   "url": "https://abhasewanavilla.netlify.app/",
   "image": [
-    "https://abhasewanavilla.netlify.app/images/sriyani-chef.jpg",
+    "https://abhasewanavilla.netlify.app/images/sriyani-chef-og.jpg",
     "https://abhasewanavilla.netlify.app/images/veranda-day.jpg",
     "https://abhasewanavilla.netlify.app/images/dinner-clay-pots.jpg"
   ],
-  "logo": "https://abhasewanavilla.netlify.app/images/sriyani-chef.jpg",
+  "logo": "https://abhasewanavilla.netlify.app/images/sriyani-chef-og.jpg",
   "telephone": ["+94712880371", "+94771405266"],
   "email": "wgsdgamage@gmail.com",
   "priceRange": "$",
@@ -266,7 +277,7 @@
     "@type": "ReserveAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://www.booking.com/Share-aISSaEQ",
+      "urlTemplate": "https://www.booking.com/Share-Vk42eL",
       "actionPlatform": [
         "http://schema.org/DesktopWebPlatform",
         "http://schema.org/MobileWebPlatform"
@@ -312,7 +323,7 @@
     <a href="index.html" class="underline">Home</a> ·
     <a href="experiences.html" class="underline">Experiences</a> ·
     <a href="contact.html" class="underline">Contact</a> ·
-    <a href="https://www.booking.com/Share-aISSaEQ" class="underline">Book on Booking.com</a>
+    <a href="https://www.booking.com/Share-Vk42eL" class="underline">Book on Booking.com</a>
   </div>
 </noscript>
 
@@ -360,7 +371,7 @@
             <p class="foot-head" data-i18n="contact.bookEyebrow">Rooms</p>
             <p class="mt-2.5 font-serif text-xl leading-snug" data-i18n="contact.bookTitle">Every stay is booked on Booking.com</p>
             <p class="mt-2.5 text-cream/75 text-sm leading-relaxed" data-i18n="contact.bookNote">The phone and the email are for questions and for arranging tours &mdash; for dates and prices, go straight to our Booking.com page.</p>
-            <a href="https://www.booking.com/Share-aISSaEQ" target="_blank" rel="noopener" class="btn btn-ochre mt-5">
+            <a href="https://www.booking.com/Share-Vk42eL" target="_blank" rel="noopener" class="btn btn-ochre mt-5">
               <span data-i18n="nav.book">Book on Booking.com</span>
             </a>
           </div>
@@ -400,9 +411,9 @@
         </div>
 
         <figure data-reveal class="lg:order-first">
-          <div class="ph zoomable rounded-2xl aspect-[4/3]" data-lightbox="gate">
-            <img src="images/entrance-gate.jpg" width="1200" height="900" loading="lazy" decoding="async"
-                 alt="The white gate and green sign of Abha Sewana Villa" data-i18n="alt.gate" data-i18n-attr="alt">
+          <div class="ph zoomable rounded-2xl aspect-[3/4] sm:aspect-[4/5]" data-lightbox="gate">
+            <img src="images/entrance-gate.jpg" width="1127" height="1500" loading="lazy" decoding="async"
+                 alt="The white gateposts and green sign of Abha Sewana Villa" data-i18n="alt.gate" data-i18n-attr="alt">
           </div>
           <figcaption class="mt-3 text-sm text-[#7a6a5c] leading-relaxed" data-i18n="contact.gateCaption">Our entrance: the white gate and the green sign. Show this photo to your driver.</figcaption>
         </figure>
@@ -438,7 +449,7 @@
     <div class="mx-auto max-w-6xl px-5 sm:px-8 py-14 sm:py-20 text-center">
       <p class="foot-head" data-i18n="contact.socialEyebrow">Follow along</p>
       <h2 class="mt-3 font-serif text-[1.8rem] sm:text-4xl leading-tight" data-i18n="contact.socialTitle">Instagram &amp; TikTok</h2>
-      <p class="mt-4 mx-auto max-w-lg text-cream/75 leading-relaxed" data-i18n="contact.socialText">We are just starting to put the house online. The accounts will be here shortly &mdash; photos of the garden, the market and whatever is in the pots that evening.</p>
+      <p class="mt-4 mx-auto max-w-lg text-cream/75 leading-relaxed" data-i18n="contact.socialText">Photos of the garden, the morning market, and whatever is in the pots that evening. Come and see what we are cooking this week.</p>
       <div id="social-buttons" class="mt-8 flex items-center justify-center gap-3"></div>
     </div>
   </section>

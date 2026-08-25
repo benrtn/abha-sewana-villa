@@ -16,7 +16,7 @@ contact.html        La page contact et « comment venir »
 main.js             Le cerveau du site : menu, langues, galerie, bouton Booking
 i18n/               Les traductions (fr.json, si.json, ta.json, zh.json,
                     ru.json, hi.json, ja.json, ko.json)
-images/             Toutes les photos
+images/             Les 20 photos du site
 
 favicon.svg         La petite icône dans l'onglet du navigateur
 apple-touch-icon.png  La même, pour les iPhone
@@ -33,59 +33,97 @@ sitemap.xml         La liste des pages, pour Google
 
 ---
 
-## 2. ⚠️ À FAIRE EN PREMIER : remplacer les photos
+## 2. Les photos
 
-Les 18 photos du dossier `images/` sont des **images provisoires**.
-Elles affichent le nom du fichier écrit dessus, pour qu'on ne les confonde
-pas avec de vraies photos. **Il faut toutes les remplacer avant de publier.**
+Les photos du dossier `images/` sont les vraies photos de la maison. Elles ont
+déjà été préparées pour le site : recadrées, redimensionnées et allégées.
 
-### Comment remplacer une photo
+### Ce qui a été fait sur les photos livrées
 
-1. Choisissez votre photo.
-2. **Renommez-la exactement comme celle qu'elle remplace**, en gardant
-   `.jpg` à la fin. Par exemple `veranda-day.jpg`.
-3. Glissez-la dans le dossier `images/` et acceptez de remplacer l'ancienne.
-4. C'est tout. Il n'y a rien à modifier dans les pages HTML.
+- **`veranda-day.jpg`** : le bord gauche a été recadré pour enlever la dame âgée
+  qui était assise sous la véranda, faute d'accord de sa part. Si elle donne son
+  accord, la version d'origine peut être remise.
+- **`cooking-serving.jpg`, `craft-workshop.jpg`, `dinner-clay-pots.jpg`,
+  `dinner-guests.jpg`** : le bas a été légèrement rogné pour enlever les
+  filigranes « HONOR X9d » et « Galaxy A15 » incrustés par les téléphones.
+- **Toutes** : ramenées à 1500 pixels maximum et recompressées, pour rester
+  sous 250 Ko chacune et se charger en 3G.
 
-### La liste des photos et où elles apparaissent
+### `sriyani-chef-og.jpg` : à quoi ça sert
 
-| Nom du fichier | Où on la voit |
-|---|---|
-| `veranda-day.jpg` | Grande photo d'accueil + section « Where you'll eat » |
-| `sriyani-portrait.jpg` | Portrait de Sriyani (page d'accueil) |
-| `sriyani-chef.jpg` | Image affichée quand on partage le lien sur Facebook / WhatsApp |
-| `dinner-clay-pots.jpg` | Section repas + page Expériences |
-| `dinner-egg-curry.jpg` | Page Expériences (dîner) |
-| `dinner-guests.jpg` | Page Expériences (dîner) |
-| `cooking-prep.jpg` | Carte « Cooking » + haut de la page Expériences |
-| `cooking-guests.jpg` | Page Expériences (cuisine) |
-| `cooking-serving.jpg` | Page Expériences (cuisine) |
-| `market-tour-1.jpg` | Carte « Market » + page Expériences |
-| `market-tour-2.jpg` | Page Expériences (marché) |
-| `craft-workshop.jpg` | Carte « Craft » + page Expériences |
-| `sriyani-breakfast.jpg` | Page Expériences (petit-déjeuner) |
-| `breakfast-spread-1.jpg` | Page Expériences (petit-déjeuner) |
-| `breakfast-spread-2.jpg` | Page Expériences (petit-déjeuner) |
-| `guest-sriyani-garden.jpg` | Bandeau de fin de la page Expériences |
-| `guests-family-kitchen.jpg` | Bandeau de fin de la page Expériences |
-| `entrance-gate.jpg` | Page Contact — le portail blanc et le panneau vert |
+C'est l'image qui s'affiche quand on partage un lien du site sur Facebook,
+WhatsApp ou X. Ces services veulent une image **large** ; or `sriyani-chef.jpg`
+est en hauteur. `sriyani-chef-og.jpg` en est donc un recadrage large, centré sur
+le visage de Sriyani.
 
-Toutes celles qui ne sont pas déjà placées ailleurs apparaissent en plus
-dans la galerie de la page d'accueil.
+> Si vous remplacez un jour `sriyani-chef.jpg`, pensez à refaire aussi
+> `sriyani-chef-og.jpg` : même image, recadrée en **1200 × 628 pixels**.
 
-### Conseils pour les photos
+### Photos encore manquantes
 
-- **Format paysage** (plus large que haut) pour toutes, sauf
-  `sriyani-portrait.jpg` qui doit être **en portrait** (plus haut que large).
-- **Largeur idéale : 1600 pixels.** Plus grand, c'est inutile et ça ralentit
-  le site pour les visiteurs en 3G.
-- Si vos photos sortent du téléphone et font 5 ou 8 Mo, réduisez-les avant
-  de les mettre en ligne. Un site outil gratuit comme **squoosh.app** fait
-  ça très bien : ouvrez la photo, réglez la qualité vers 75 %, téléchargez.
-  Visez **moins de 400 Ko par photo**.
-- Gardez bien l'extension `.jpg` en minuscules.
+Il manque **la photo de la Cité sacrée** pour la carte « Sacred City of
+Anuradhapura » de la page Expériences, ainsi que **les 3 chambres et une salle
+de bain**.
 
----
+Les cartes d'excursion acceptent une photo facultative : celles qui n'en ont pas
+s'affichent simplement en texte, sans laisser de trou. Pour ajouter la photo de
+la Cité sacrée, il faudra la déposer dans `images/` et l'ajouter dans la liste
+`TOURS` de la page Expériences. En attendant, la section
+« Our rooms » de la page d'accueil fonctionne sans photo : elle présente les
+chambres et les équipements en texte. Quand les photos arriveront, il y aura une
+petite modification à faire dans `index.html` pour les afficher.
+
+### Remplacer une photo
+
+1. Renommez votre photo **exactement** comme celle qu'elle remplace, `.jpg` compris.
+2. Glissez-la dans `images/` et acceptez de remplacer l'ancienne.
+3. Rien d'autre à modifier : la page s'adapte toute seule.
+
+> ⚠️ **Une seule chose à surveiller** : chaque photo est déclarée dans le HTML
+> avec sa largeur et sa hauteur (`width="1125" height="1500"`). C'est ce qui
+> évite que la page « saute » pendant le chargement. Si votre nouvelle photo n'a
+> pas les mêmes proportions que l'ancienne, cherchez son nom de fichier dans les
+> pages HTML et corrigez ces deux nombres.
+
+### La liste des photos
+
+| Fichier | Format | Où on la voit |
+|---|---|---|
+| `veranda-day.jpg` | hauteur | Grande photo d'accueil + section « Where you'll eat » |
+| `sriyani-portrait.jpg` | largeur | Portrait de Sriyani (accueil) |
+| `sriyani-chef.jpg` | hauteur | Galerie |
+| `sriyani-chef-og.jpg` | large | Aperçu lors du partage d'un lien (jamais visible sur le site) |
+| `dinner-clay-pots.jpg` | hauteur | Section repas + page Expériences |
+| `dinner-egg-curry.jpg` | hauteur | Page Expériences (dîner) + galerie |
+| `dinner-guests.jpg` | hauteur | Page Expériences (dîner) + galerie |
+| `cooking-prep.jpg` | hauteur | Carte « Cooking » + page Expériences |
+| `cooking-guests.jpg` | largeur | Page Expériences (cuisine) + galerie |
+| `cooking-serving.jpg` | largeur | Haut de la page Expériences + galerie |
+| `market-tour-1.jpg` | largeur | Carte « Market » + page Expériences |
+| `market-tour-2.jpg` | largeur | Page Expériences (marché) + galerie |
+| `craft-workshop.jpg` | largeur | Carte « Craft » + page Expériences |
+| `sriyani-breakfast.jpg` | hauteur | Page Expériences (petit-déjeuner) + galerie |
+| `breakfast-spread-1.jpg` | hauteur | Page Expériences (petit-déjeuner) + galerie |
+| `breakfast-spread-2.jpg` | hauteur | Page Expériences (petit-déjeuner) + galerie |
+| `guest-sriyani-garden.jpg` | hauteur | Bandeau de fin des Expériences + galerie |
+| `sriyani-kitchen.jpg` | hauteur | Bandeau de fin des Expériences + galerie |
+| `entrance-porch.jpg` | hauteur | Galerie |
+| `entrance-gate.jpg` | hauteur | Page Contact — le portail et le panneau vert |
+| `tour-wilpattu.jpg` | largeur | Page Expériences — carte « Wilpattu safari » |
+
+La galerie de la page d'accueil est en **mosaïque** : chaque photo y garde ses
+propres proportions, qu'elle soit en hauteur ou en largeur. Vous pouvez donc y
+ajouter n'importe quelle photo sans vous soucier du format.
+
+### Conseils si vous ajoutez de nouvelles photos
+
+- **1500 pixels de côté maximum.** Au-delà, c'est inutile et ça ralentit le site.
+- **Moins de 250 Ko par photo.** Les photos d'un téléphone font souvent 5 Mo :
+  réduisez-les sur **squoosh.app** (qualité autour de 75 %) avant de les mettre.
+- Vérifiez qu'aucun **filigrane de téléphone** n'apparaît dans un coin.
+- Attention aux **personnes reconnaissables** qui ne sont pas des hôtes
+  consentants : mieux vaut recadrer.
+- Extension `.jpg` en minuscules.
 
 ## 3. Modifier un texte
 
@@ -207,15 +245,15 @@ fichier se trouve le bloc `SITE` :
 ```js
 var SITE = {
   name: 'Abha Sewana Villa',
-  booking: 'https://www.booking.com/Share-aISSaEQ',
+  booking: 'https://www.booking.com/Share-Vk42eL',
   email: 'wgsdgamage@gmail.com',
   phones: [
     { label: '+94 71 288 0371', tel: '+94712880371' },
     { label: '+94 77 140 5266', tel: '+94771405266' }
   ],
   address: 'No. 3323, Stage 3, Anuradhapura, Sri Lanka',
-  instagram: '',
-  tiktok: ''
+  instagram: 'https://www.instagram.com/abhasewanavilla',
+  tiktok: 'https://www.tiktok.com/@abha.sewana.villa'
 };
 ```
 
@@ -230,17 +268,13 @@ tous les fichiers et remplacez-le partout.
 
 ### Instagram et TikTok
 
-Quand les comptes existeront, collez simplement les liens entre les
-guillemets :
+Les deux comptes sont en ligne et les boutons du pied de page et de la page
+Contact sont actifs. Pour changer un compte, remplacez simplement l'adresse
+entre les guillemets.
 
-```js
-  instagram: 'https://www.instagram.com/votre_compte',
-  tiktok: 'https://www.tiktok.com/@votre_compte',
-```
-
-Les boutons gris du pied de page et de la page Contact deviennent alors
-cliquables tout seuls. Tant que c'est vide, ils restent grisés avec la
-mention « Coming soon ».
+Si vous videz une des deux lignes (`instagram: ''`), le bouton correspondant
+redevient gris et non cliquable. Si vous videz les deux, la mention
+« Coming soon » réapparaît toute seule.
 
 ---
 
@@ -351,6 +385,10 @@ sur **Publish deploy**. L'ancienne version revient immédiatement.
   et rester utilisable en 3G.
 - Si une photo manque, un cadre discret s'affiche à la place : la page ne
   montre jamais d'icône d'image cassée.
+- Les cadres photo suivent l'orientation réelle de chaque image (les portraits
+  dans des cadres en hauteur, les paysages dans des cadres en largeur), et la
+  galerie est une mosaïque en colonnes CSS où chaque photo garde ses
+  proportions. Aucune photo n'est déformée ni recadrée à l'aveugle.
 - **Note de performance :** Tailwind est chargé depuis son CDN, comme demandé.
   C'est très pratique à modifier, mais cela représente un fichier JavaScript
   assez lourd à télécharger avant que la mise en page ne s'affiche. Si un
