@@ -7,8 +7,9 @@ site : recadrées, redimensionnées (1500 px maximum) et allégées (moins de
 
 CE QUI A ÉTÉ MODIFIÉ
 --------------------
-veranda-day.jpg          bord gauche recadré : la dame âgée assise sous la
-                         véranda a été retirée du cadre, faute d'accord.
+veranda-day.jpg          version pleine résolution (3472 x 4624 à l'origine),
+                         bord gauche recadré à 13 % : la dame âgée assise sous
+                         la véranda est hors cadre, faute d'accord de sa part.
 cooking-serving.jpg      bas rogné : filigrane « HONOR X9d »
 dinner-clay-pots.jpg     bas rogné : filigrane « HONOR X9d »
 dinner-guests.jpg        bas rogné : filigrane « HONOR X9d »

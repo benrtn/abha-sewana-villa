@@ -205,37 +205,23 @@ simplement pas cette langue — il restera en anglais, il ne plantera pas.
 
 ---
 
-## 5. Ajouter un avis de client
+## 5. Ajouter des avis de clients plus tard
 
-Trois emplacements vides attendent sur la page d'accueil, dans la section
-**« What our guests say »**.
+La section « avis clients » a été retirée du site : il n'y en avait pas encore,
+et trois cadres vides font moins bonne impression que pas de section du tout.
 
-Ouvrez `index.html`, cherchez `reviews.soon`. Vous trouverez trois blocs
-identiques. Dans celui que vous voulez remplir :
+Quand vous aurez de vrais avis, deux possibilités :
 
-```html
-<p class="..." data-i18n="reviews.soon">A guest review will appear here soon.</p>
-```
-devient
-```html
-<p class="...">"We felt part of the family from the very first evening."</p>
-```
+**La simple** — laissez-les sur Booking.com. Les voyageurs les y lisent déjà, et
+le site renvoie vers votre page à chaque bouton.
 
-et juste en dessous :
+**Remettre une section sur le site** — dites-le moi et je la remets, ou faites-la
+remettre : le code existe toujours dans l'historique Git du projet (commit
+« Add Abha Sewana Villa static site »), avec les traductions dans les 9 langues.
 
-```html
-<figcaption class="..." data-i18n="reviews.placeholderName">Name — country</figcaption>
-```
-devient
-```html
-<figcaption class="...">Marie &amp; Paul — France</figcaption>
-```
-
-> Supprimez bien le `data-i18n="..."` sur les deux lignes que vous remplissez.
-> Sans ça, le vrai avis serait remplacé par le texte d'attente dans les
-> autres langues.
-
----
+Dans les deux cas, recopiez les avis **mot pour mot** et indiquez le prénom et
+le pays. Un avis inventé se repère, et c'est exactement ce qui ferait perdre au
+site la confiance que le reste construit.
 
 ## 6. Changer un numéro, l'adresse, le lien Booking.com
 
