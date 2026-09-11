@@ -61,14 +61,25 @@ le visage de Sriyani.
 
 ### Photos encore manquantes
 
-Il manque **la photo de la Cité sacrée** pour la carte « Sacred City of
-Anuradhapura » de la page Expériences, ainsi que **les 3 chambres et une salle
-de bain**.
+Il manque **les 3 chambres et une salle de bain**.
 
 Les cartes d'excursion acceptent une photo facultative : celles qui n'en ont pas
-s'affichent simplement en texte, sans laisser de trou. Pour ajouter la photo de
-la Cité sacrée, il faudra la déposer dans `images/` et l'ajouter dans la liste
-`TOURS` de la page Expériences. En attendant, la section
+(« Temple tours » et « Bicycle rental ») s'affichent simplement en texte, sans
+laisser de trou.
+
+### Les deux photos d'excursion : une réserve à connaître
+
+`tour-wilpattu.jpg` et `tour-sacred-city.jpg` ne sont pas des photos prises par
+la famille, contrairement à toutes les autres. Deux conséquences :
+
+1. **Droits d'image.** Elles viennent d'internet. Utiliser sur un site commercial
+   une photo dont on ne détient pas les droits reste un risque, même faible.
+2. **Résolution.** 480 et 494 px de large seulement : elles sont légèrement
+   agrandies à l'écran, un peu moins nettes que le reste du site.
+
+Le remède est simple et gratuit : la Cité sacrée est à dix minutes de la maison.
+Une photo prise par Sriyani ou par un hôte réglerait les deux points d'un coup,
+et serait plus cohérente avec le reste du site. En attendant, la section
 « Our rooms » de la page d'accueil fonctionne sans photo : elle présente les
 chambres et les équipements en texte. Quand les photos arriveront, il y aura une
 petite modification à faire dans `index.html` pour les afficher.
@@ -110,6 +121,7 @@ petite modification à faire dans `index.html` pour les afficher.
 | `entrance-porch.jpg` | hauteur | Galerie |
 | `entrance-gate.jpg` | hauteur | Page Contact — le portail et le panneau vert |
 | `tour-wilpattu.jpg` | largeur | Page Expériences — carte « Wilpattu safari » |
+| `tour-sacred-city.jpg` | hauteur | Page Expériences — carte « Sacred City » |
 
 La galerie de la page d'accueil est en **mosaïque** : chaque photo y garde ses
 propres proportions, qu'elle soit en hauteur ou en largeur. Vous pouvez donc y

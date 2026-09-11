@@ -55,9 +55,20 @@ entrance-porch.jpg         hauteur   Galerie
 entrance-gate.jpg          hauteur   Contact — le portail et le panneau vert
 
 tour-wilpattu.jpg          largeur   Expériences — carte « Wilpattu safari »
-                                     ATTENTION : image de 480 px seulement,
-                                     elle est légèrement agrandie à l'écran.
-                                     Une version plus grande serait mieux.
+tour-sacred-city.jpg       hauteur   Expériences — carte « Sacred City »
+
+                                     ATTENTION sur ces deux photos d'excursion :
+                                     elles ne font que 480 et 494 px de large,
+                                     donc légèrement agrandies à l'écran. Des
+                                     versions plus grandes seraient meilleures.
+                                     Ce ne sont pas non plus des photos de la
+                                     maison : voir la note sur les droits dans
+                                     le README.
+
+                                     Les bandeaux des cartes d'excursion
+                                     prennent le format exact de la photo :
+                                     rien n'est jamais coupé, qu'elle soit en
+                                     hauteur ou en largeur.
 
 REMPLACER UNE PHOTO
 -------------------
