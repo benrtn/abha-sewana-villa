@@ -305,23 +305,48 @@ Quand vous connaîtrez l'adresse finale, remplacez-la **partout** :
 - dans `sitemap.xml` ;
 - dans `robots.txt`.
 
+C'est **le seul vrai réglage restant** avant que le site soit complet côté
+référencement.
+
 C'est ce qui permet à Google d'associer correctement les 9 versions
 linguistiques entre elles.
 
-### Les coordonnées GPS
+### Les coordonnées GPS (facultatif)
 
-Le bloc `LodgingBusiness` des 3 pages contient :
+Le site **ne contient volontairement aucune coordonnée GPS**. Les coordonnées
+exactes de la maison ne sont pas connues, et un point placé au mauvais endroit
+est pire pour Google qu'un point absent : il déplacerait l'épingle de plusieurs
+kilomètres.
+
+À la place, Google dispose de deux informations fiables :
+l'**adresse postale** complète, et le lien **`hasMap`** qui pointe vers votre
+vraie fiche Google Maps. C'est suffisant dans la très grande majorité des cas.
+
+Si vous voulez quand même ajouter les coordonnées :
+
+1. Ouvrez Google Maps, faites un **clic droit** exactement sur la maison.
+2. La première ligne du menu affiche deux nombres, par exemple
+   `8.335421, 80.412876`. Cliquez dessus : ils se copient tout seuls.
+3. Dans `index.html`, `experiences.html` et `contact.html`, cherchez la ligne
+   `"address": {` et **collez juste au-dessus** le bloc suivant, en remplaçant
+   les deux nombres par les vôtres :
 
 ```json
-"geo": { "@type": "GeoCoordinates", "latitude": 8.3114, "longitude": 80.4037 }
+  "geo": { "@type": "GeoCoordinates", "latitude": 8.335421, "longitude": 80.412876 },
 ```
 
-Ce sont les coordonnées du **centre d'Anuradhapura**, pas celles exactes
-de la maison. Pour les corriger : ouvrez Google Maps, faites un clic droit
-sur la maison, cliquez sur les chiffres qui s'affichent (ils se copient
-tout seuls), et remplacez les deux nombres dans les 3 pages.
+> Attention à la virgule à la fin de la ligne, et n'utilisez **pas** de
+> guillemets autour des nombres. Pour vérifier que vous n'avez rien cassé,
+> copiez tout le contenu de la balise `<script type="application/ld+json">`
+> dans **jsonlint.com**.
 
----
+### La carte affichée sur la page Contact
+
+Elle ne dépend pas des coordonnées : elle cherche la villa par son nom et son
+adresse. Le bouton « Open in Google Maps », lui, envoie directement vers votre
+fiche. Si vous changez de fiche Google un jour, remplacez le lien
+`https://maps.app.goo.gl/FCf2TxpAqb5jDdWi8` dans `contact.html` (le bouton) et
+dans les trois pages (le champ `hasMap` du bloc Google).
 
 ## 9. Petites questions fréquentes
 
