@@ -52,10 +52,10 @@ breakfast-spread-2.jpg     hauteur   Expériences (petit-déjeuner) + galerie
 guest-sriyani-garden.jpg   hauteur   Bandeau de fin Expériences + galerie
 sriyani-kitchen.jpg        hauteur   Bandeau de fin Expériences + galerie
 entrance-porch.jpg         hauteur   Galerie
-entrance-gate.jpg          hauteur   Contact — le portail et le panneau vert
+entrance-gate.jpg          hauteur   Contact, le portail et le panneau vert
 
-tour-wilpattu.jpg          largeur   Expériences — carte « Wilpattu safari »
-tour-sacred-city.jpg       hauteur   Expériences — carte « Sacred City »
+tour-wilpattu.jpg          largeur   Expériences, carte « Wilpattu safari »
+tour-sacred-city.jpg       hauteur   Expériences, carte « Sacred City »
 
                                      ATTENTION sur ces deux photos d'excursion :
                                      elles ne font que 480 et 494 px de large,

@@ -1,4 +1,4 @@
-# Netlify settings. Nothing is compiled — the folder is published as it is.
+# Netlify settings. Nothing is compiled, the folder is published as it is.
 [build]
   publish = "."
   command = ""

@@ -1,4 +1,4 @@
-# Abha Sewana Villa — site web
+# Abha Sewana Villa, site web
 
 Site vitrine de la maison d'hôtes, en 9 langues.
 **Il n'y a rien à installer et rien à compiler.** Ce sont de simples fichiers :
@@ -119,9 +119,9 @@ petite modification à faire dans `index.html` pour les afficher.
 | `guest-sriyani-garden.jpg` | hauteur | Bandeau de fin des Expériences + galerie |
 | `sriyani-kitchen.jpg` | hauteur | Bandeau de fin des Expériences + galerie |
 | `entrance-porch.jpg` | hauteur | Galerie |
-| `entrance-gate.jpg` | hauteur | Page Contact — le portail et le panneau vert |
-| `tour-wilpattu.jpg` | largeur | Page Expériences — carte « Wilpattu safari » |
-| `tour-sacred-city.jpg` | hauteur | Page Expériences — carte « Sacred City » |
+| `entrance-gate.jpg` | hauteur | Page Contact, le portail et le panneau vert |
+| `tour-wilpattu.jpg` | largeur | Page Expériences, carte « Wilpattu safari » |
+| `tour-sacred-city.jpg` | hauteur | Page Expériences, carte « Sacred City » |
 
 La galerie de la page d'accueil est en **mosaïque** : chaque photo y garde ses
 propres proportions, qu'elle soit en hauteur ou en largeur. Vous pouvez donc y
@@ -146,7 +146,7 @@ par défaut, celle que Google lit.
 2. Cherchez la phrase avec `Ctrl + F` (`Cmd + F` sur Mac).
 3. Modifiez **uniquement le texte**, entre `>` et `<`.
 
-Exemple — pour changer le slogan de la page d'accueil, cherchez `hero.tagline` :
+Exemple : pour changer le slogan de la page d'accueil, cherchez `hero.tagline`.
 
 ```html
 <p ... data-i18n="hero.tagline">Your Peaceful Retreat in the Heart of History</p>
@@ -195,13 +195,13 @@ Pour corriger une traduction :
 
 1. Ne changez jamais le texte à **gauche** des deux-points (l'étiquette).
 2. Gardez les **guillemets droits** `"` autour du texte, et la **virgule**
-   à la fin de la ligne — sauf sur la toute dernière ligne du fichier.
+   à la fin de la ligne, sauf sur la toute dernière ligne du fichier.
 3. Si votre texte contient un guillemet `"`, écrivez-le `\"`.
 
 **Pour vérifier que vous n'avez rien cassé :** copiez tout le contenu du
 fichier dans **jsonlint.com** et cliquez sur « Validate ». S'il dit *Valid
 JSON*, c'est bon. Si un fichier de langue est cassé, le site n'affichera
-simplement pas cette langue — il restera en anglais, il ne plantera pas.
+simplement pas cette langue. Il restera en anglais, il ne plantera pas.
 
 ### Ajouter une langue
 
@@ -224,10 +224,10 @@ et trois cadres vides font moins bonne impression que pas de section du tout.
 
 Quand vous aurez de vrais avis, deux possibilités :
 
-**La simple** — laissez-les sur Booking.com. Les voyageurs les y lisent déjà, et
+**La simple.** Laissez-les sur Booking.com. Les voyageurs les y lisent déjà, et
 le site renvoie vers votre page à chaque bouton.
 
-**Remettre une section sur le site** — dites-le moi et je la remets, ou faites-la
+**Remettre une section sur le site.** Dites-le moi et je la remets, ou faites-la
 remettre : le code existe toujours dans l'historique Git du projet (commit
 « Add Abha Sewana Villa static site »), avec les traductions dans les 9 langues.
 
@@ -417,5 +417,5 @@ sur **Publish deploy**. L'ancienne version revient immédiatement.
   assez lourd à télécharger avant que la mise en page ne s'affiche. Si un
   jour le site paraît lent sur une connexion 3G, la seule vraie optimisation
   consiste à remplacer ce CDN par une feuille de style CSS figée. Cela
-  demande de générer le fichier une fois — et fait perdre le « zéro
+  demande de générer le fichier une fois, et fait perdre le « zéro
   installation » qui fait tout l'intérêt de la version actuelle.

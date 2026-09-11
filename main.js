@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Abha Sewana Villa — main.js
+   Abha Sewana Villa, main.js
    Everything the site needs: header, footer, translations, gallery, menu.
    No build step, no npm. Just this one file.
    ========================================================================== */
@@ -7,7 +7,7 @@
   'use strict';
 
   /* ------------------------------------------------------------------
-     1. SITE DETAILS  —  change a phone number or the Booking link here
+     1. SITE DETAILS. Change a phone number or the Booking link here
                          and it updates on all three pages.
      ------------------------------------------------------------------ */
   var SITE = {
@@ -26,7 +26,7 @@
   };
 
   /* ------------------------------------------------------------------
-     2. LANGUAGES  —  native names, shown in the header selector.
+     2. LANGUAGES. Native names, shown in the header selector.
      ------------------------------------------------------------------ */
   var LANGS = [
     { code: 'en', name: 'English' },
