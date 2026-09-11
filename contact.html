@@ -189,6 +189,10 @@
     .card-hover:hover{box-shadow:0 18px 40px -22px rgba(42,33,27,.4);transform:translateY(-3px);
       border-color:rgba(183,92,56,.3)}
 
+    /* le texte du hero passe par-dessus la photo : une ombre douce le garde
+       lisible même là où l'image est claire, sans assombrir tout le cliché */
+    .hero-copy h1,.hero-copy p{text-shadow:0 1px 14px rgba(20,13,9,.55),0 1px 3px rgba(20,13,9,.4)}
+
     /* ---------- masonry gallery: photos keep their own shape ---------- */
     .masonry{column-count:2;column-gap:.75rem}
     @media (min-width:640px){.masonry{column-count:3;column-gap:1rem}}

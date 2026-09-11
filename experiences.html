@@ -189,6 +189,10 @@
     .card-hover:hover{box-shadow:0 18px 40px -22px rgba(42,33,27,.4);transform:translateY(-3px);
       border-color:rgba(183,92,56,.3)}
 
+    /* le texte du hero passe par-dessus la photo : une ombre douce le garde
+       lisible même là où l'image est claire, sans assombrir tout le cliché */
+    .hero-copy h1,.hero-copy p{text-shadow:0 1px 14px rgba(20,13,9,.55),0 1px 3px rgba(20,13,9,.4)}
+
     /* ---------- masonry gallery: photos keep their own shape ---------- */
     .masonry{column-count:2;column-gap:.75rem}
     @media (min-width:640px){.masonry{column-count:3;column-gap:1rem}}
@@ -333,8 +337,8 @@
     <img src="images/cooking-serving.jpg" width="1500" height="1035" fetchpriority="high" decoding="async"
          alt="Sriyani serving the curries we cooked together" data-i18n="alt.cookServe" data-i18n-attr="alt"
          class="absolute inset-0 w-full h-full object-cover">
-    <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(26,18,13,.88) 0%,rgba(26,18,13,.55) 34%,rgba(26,18,13,.12) 68%,rgba(26,18,13,.05) 100%),linear-gradient(to right,rgba(26,18,13,.72) 0%,rgba(26,18,13,.34) 38%,rgba(26,18,13,0) 68%)"></div>
-    <div class="relative mx-auto max-w-6xl px-5 sm:px-8 pt-28 pb-14 sm:pt-36 sm:pb-20">
+    <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(26,18,13,.9) 0%,rgba(26,18,13,.74) 28%,rgba(26,18,13,.46) 52%,rgba(26,18,13,.14) 80%,rgba(26,18,13,.05) 100%),linear-gradient(to right,rgba(26,18,13,.7) 0%,rgba(26,18,13,.38) 45%,rgba(26,18,13,0) 78%)"></div>
+    <div class="hero-copy relative mx-auto max-w-6xl px-5 sm:px-8 pt-28 pb-14 sm:pt-36 sm:pb-20">
       <p class="text-ochre text-xs tracking-[0.18em] uppercase font-semibold" data-i18n="xp.eyebrow">With Sriyani</p>
       <h1 class="mt-4 font-serif text-white text-[2.4rem] sm:text-6xl leading-[1.08]" data-i18n="xp.title">Experiences</h1>
       <p class="mt-5 max-w-xl text-white/85 leading-relaxed" data-i18n="xp.intro">The best part of staying here happens away from the rooms. Everything below happens with me, in my house or a short walk from it.</p>
