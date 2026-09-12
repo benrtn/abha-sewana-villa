@@ -210,6 +210,9 @@
     .zoomable>img{transition:transform .5s cubic-bezier(.2,.6,.2,1)}
     .zoomable:hover>img{transform:scale(1.035)}
     .lb-trigger{cursor:zoom-in}
+    /* une photo qui ne sert qu'à nourrir la visionneuse ne s'affiche jamais,
+       quel que soit l'ordre de chargement des feuilles de style */
+    .ph[hidden]{display:none}
     .img-missing{min-height:100%;width:100%;background:
       repeating-linear-gradient(135deg,rgba(183,92,56,.07) 0 10px,transparent 10px 20px),var(--sand)}
 

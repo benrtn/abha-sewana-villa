@@ -424,6 +424,10 @@
     Object.keys(groups).forEach(function (g) {
       var list = groups[g];
       list.forEach(function (t, i) {
+        // A photo that only feeds its room's viewer carries the hidden
+        // attribute: it still counts in the group, so the arrows reach it,
+        // but it stays out of the tab order and out of the pointer path.
+        if (t.hasAttribute('hidden')) return;
         if (t.tagName !== 'BUTTON' && t.tagName !== 'A') {
           t.setAttribute('role', 'button');
           t.setAttribute('tabindex', '0');
